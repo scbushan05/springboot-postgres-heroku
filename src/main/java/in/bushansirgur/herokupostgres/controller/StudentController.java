@@ -56,6 +56,6 @@ public class StudentController {
 			sRepo.delete(student.get());
 			return new ResponseEntity<Student>(student.get(), HttpStatus.OK);
 		}
-		throw new RuntimeException("Unable to find the object");
+		throw new RuntimeException("Unable to find the object!");
 	}
 }
